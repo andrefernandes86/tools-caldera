@@ -1,2 +1,3 @@
 FROM mitre/caldera
-ENTRYPOINT ["python3, "server.py", "--insecure"]
+COPY server.sh ./server.sh
+ENTRYPOINT ["bash", "./server.sh"]
