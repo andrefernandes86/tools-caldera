@@ -1,3 +1,3 @@
 FROM mitre/caldera
-COPY server.sh ./server.sh
-ENTRYPOINT ["bash", "./server.sh"]
+COPY start.sh ./start.sh
+ENTRYPOINT ["bash", "./start.sh"]
